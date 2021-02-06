@@ -57,6 +57,7 @@ const Favorites: React.FC = () => {
                   source={{ uri: item.thumbnail_url }}
                 />
               </FoodImageContainer>
+
               <FoodContent>
                 <FoodTitle>{item.name}</FoodTitle>
                 <FoodDescription>{item.description}</FoodDescription>
