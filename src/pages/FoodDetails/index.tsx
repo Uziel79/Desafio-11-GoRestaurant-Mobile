@@ -5,6 +5,7 @@ import React, {
   useMemo,
   useLayoutEffect,
 } from 'react';
+
 import { Image } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Feather';
@@ -148,6 +149,7 @@ const FoodDetails: React.FC = () => {
         image_url: food.image_url,
         thumbnail_url: food.thumbnail_url,
       };
+
       api.post('/favorites', newFavorite);
       setIsFavorite(true);
     }
