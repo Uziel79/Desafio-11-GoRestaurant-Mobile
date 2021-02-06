@@ -91,6 +91,7 @@ const FoodDetails: React.FC = () => {
 
       try {
         await api.get(`/favorites/${routeParams.id}`);
+
         setIsFavorite(true);
       } catch (error) {
         setIsFavorite(false);
