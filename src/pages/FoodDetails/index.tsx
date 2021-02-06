@@ -183,7 +183,9 @@ const FoodDetails: React.FC = () => {
       thumbnail_url: food.thumbnail_url,
       extras,
     };
+
     await api.post('/orders', newOrder);
+
     navigation.goBack();
   }
 
@@ -222,6 +224,7 @@ const FoodDetails: React.FC = () => {
                 }}
               />
             </FoodImageContainer>
+
             <FoodContent>
               <FoodTitle>{food.name}</FoodTitle>
               <FoodDescription>{food.description}</FoodDescription>
@@ -256,6 +259,7 @@ const FoodDetails: React.FC = () => {
             </AdittionalItem>
           ))}
         </AdditionalsContainer>
+
         <TotalContainer>
           <Title>Total do pedido</Title>
           <PriceButtonContainer>
