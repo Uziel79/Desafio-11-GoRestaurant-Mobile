@@ -109,8 +109,10 @@ const FoodDetails: React.FC = () => {
           quantity: extra.quantity + 1,
         };
       }
+
       return extra;
     });
+
     setExtras(newExtras);
   }
 
