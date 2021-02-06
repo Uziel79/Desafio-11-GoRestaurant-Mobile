@@ -86,6 +86,7 @@ const FoodDetails: React.FC = () => {
           quantity: 0,
         };
       });
+
       setExtras(extrasOptions);
 
       try {
