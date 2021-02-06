@@ -144,6 +144,7 @@ const FoodDetails: React.FC = () => {
   const toggleFavorite = useCallback(() => {
     if (isFavorite) {
       api.delete(`/favorites/${food.id}`);
+
       setIsFavorite(false);
     } else {
       const newFavorite = {
@@ -157,6 +158,7 @@ const FoodDetails: React.FC = () => {
       };
 
       api.post('/favorites', newFavorite);
+
       setIsFavorite(true);
     }
   }, [isFavorite, food]);
